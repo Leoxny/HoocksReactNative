@@ -10,8 +10,6 @@ export default function App() {
 
   const [count, setCount] = useState(0)
 
-  let number = 0
-
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
@@ -22,7 +20,7 @@ export default function App() {
             <Text>-</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => setCount(count + 0)}>
+        <TouchableOpacity onPress={() => setCount(0)}>
           <View style={styles.zero}>
             <Text style={{color: 'white'}}>0</Text>
           </View>
